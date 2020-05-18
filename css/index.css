@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+ul.tabs{
+    flex-direction: column;
+    float: left;
+}
+.tabs .subTab a:focus{
+    background-color: #084f88 !important;
+}
+.subTab a{
+    height: 50px !important;  
+    margin-top: 15%;
+}
+.navbar-fixed{
+    z-index: 1 !important;
+}
+.logo{
+    width: 50px !important;
+    display: block;
+    margin: 0 auto;
+}
