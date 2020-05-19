@@ -16,20 +16,20 @@
         </a>
         <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="hide-on-med-and-down tabs tabs-transparent">
-          <li class="tab"><a class="active" href="#home">Home</a></li>
-          <li class="tab"><a href="#about">About</a></li>
-          <li class="tab"><a href="#contact">Contact</a></li>
-          <li class="tab"><a href="#test4">Test</a></li>
+          <li class="tab"><a class="active" onclick="reloadPage()" href="#home">Home</a></li>
+          <li class="tab"><a href="#about" onclick="clickNav()">About</a></li>
+          <li class="tab"><a href="#contact" onclick="clickNav()">Contact</a></li>
+          <!-- <li class="tab"><a href="#test4">Test</a></li> -->
         </ul>
       </div>
     </nav>
   </div>
   
     <ul class="sidenav tabs grey darken-4" id="mobile-demo">
-      <li class="tab subTab"><a class="active blue-text" href="#home">Home</a></li>
-      <li class="tab subTab"><a class="blue-text" href="#about">About</a></li>
-      <li class="tab subTab"><a class="blue-text" href="#contact">Contact</a></li>
-      <li class="tab subTab"><a class="blue-text" href="#test4">Test</a></li>
+      <li class="tab subTab"><a onclick="reloadPage()" class="active blue-text left-align" href="#home">Home<i class="material-icons right white-text">home</i></a></li>
+      <li class="tab subTab"><a class="blue-text left-align" onclick="clickNav()" href="#about">About<i class="material-icons right white-text">assignment_ind</i></a></li>
+      <li class="tab subTab"><a class="blue-text left-align" onclick="clickNav()" href="#contact">Contact<i class="material-icons right white-text">contacts</i></a></li>
+      <!-- <li class="tab subTab"><a class="blue-text valign-wrapper" href="#test4">Test</a></li> -->
     </ul>
 
     <!-- Home Page -->
@@ -40,14 +40,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="./asset/dark_theme.jpg" alt="Photo by Nathan De Fortunato on Unsplash">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Lorem, ipsum dolor.</span>
               </div>
               <div class="card-content grey darken-3">
-                <p>I am a very simple card. I am good at containing small bits of information.
+                <p class="truncate">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action grey darken-3">
-                <a href="#">This is a link</a>
+                <button id="artic1" onclick="clickArticle1()" class="waves-effect waves-light btn blue darken-2">Read More <i class="material-icons right">chevron_right</i></button>
               </div>
             </div>
           </div>
@@ -55,14 +55,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="./asset/dark_theme2.jpg" alt="Photo by SCREEN POST on Unsplash">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Lorem, ipsum dolor.</span>
               </div>
               <div class="card-content grey darken-3">
-                <p>I am a very simple card. I am good at containing small bits of information.
+                <p class="truncate">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action grey darken-3">
-                <a href="#">This is a link</a>
+                <button id="artic2" onclick="clickArticle2()" class="waves-effect waves-light btn blue darken-2">Read More <i class="material-icons right">chevron_right</i></button>
               </div>
             </div>
           </div>
@@ -72,14 +72,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="./asset/x-box.jpg" alt="Photo by James Yarema on Unsplash">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Lorem, ipsum dolor.</span>
               </div>
               <div class="card-content grey darken-3">
-                <p>I am a very simple card. I am good at containing small bits of information.
+                <p class="truncate">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action grey darken-3">
-                <a href="#">This is a link</a>
+                <button id="artic3" onclick="clickArticle3()" class="waves-effect waves-light btn blue darken-2">Read More <i class="material-icons right">chevron_right</i></button>
               </div>
             </div>
           </div>
@@ -87,14 +87,14 @@
             <div class="card">
               <div class="card-image">
                 <img src="./asset/dark_theme3.jpg" alt="Photo by Omid Armin on Unsplash">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Lorem, ipsum dolor.</span>
               </div>
               <div class="card-content grey darken-3">
-                <p>I am a very simple card. I am good at containing small bits of information.
+                <p class="truncate">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action grey darken-3">
-                <a href="#">This is a link</a>
+                <button id="artic4" onclick="clickArticle4()" class="waves-effect waves-light btn blue darken-2">Read More <i class="material-icons right">chevron_right</i></button>
               </div>
             </div>
           </div>
@@ -117,12 +117,75 @@
     </div>
 
     <!-- Article Page -->
-    <div id="test4" class="col s12">
-      <div class="container white-text">
-        test 4
+    <div id="articlePage" class="col s12">
+      <div class="white-text">
+        <div id="1" class="hidden">
+          <img src="./asset/dark_theme.jpg" class="jumboImg" alt="Photo by Nathan De Fortunato on Unsplash">
+          <div class="container">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem.</p>
+
+          </div>
+        </div>
+        <div id="2" class="hidden">
+          <img src="./asset/dark_theme2.jpg" class="jumboImg" alt="Photo by SCREEN POST on Unsplash">
+          <div class="container">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem.</p>
+
+          </div>
+        </div>
+        <div id="3" class="hidden">
+          <img src="./asset/x-box.jpg" class="jumboImg" alt="Photo by James Yarema on Unsplash">
+          <div class="container">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem.</p>
+
+          </div>
+        </div>
+        <div id="4" class="hidden">
+          <img src="./asset/dark_theme3.jpg" class="jumboImg" alt="Photo by Omid Armin on Unsplash">
+          <div class="container">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem.</p>
+
+          </div>
+        </div>
+      </div>
+      <div id="backhome" class="hidden container">
+        <a class="btn-floating btn-large waves-effect waves-light blue darken-2 right" onclick="reloadPage()"><i class="material-icons">home</i></a>
       </div>
     </div>
   </div>
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row mb-0">
+        <div class="col l6 s12">
+          <h5 class="white-text">Creator by Erico</h5>
+          <p class="grey-text text-lighten-4">&copy; 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/index.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./js/materialize.min.js"></script>
 </body>

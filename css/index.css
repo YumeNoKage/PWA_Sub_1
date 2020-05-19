@@ -7,19 +7,60 @@ body{
 ul.tabs{
     flex-direction: column;
     float: left;
-}
+} 
 .tabs .subTab a:focus{
     background-color: #084f88 !important;
 }
 .subTab a{
     height: 50px !important;  
     margin-top: 15%;
-}
+} 
 .navbar-fixed{
-    z-index: 1 !important;
+    z-index: 10 !important;
+}
+.row.navbar-fixed{
+    margin-bottom: 0 !important;
+}
+#home{
+    margin-top: 20px;
 }
 .logo{
     width: 50px !important;
     display: block;
     margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+
+.jumboImg{
+    width: 100%;
+}
+
+#backhome{
+    margin-bottom: 7rem;
+    position: relative;
+}
+#backhome a{
+    position: fixed;
+    bottom: 3rem;
+    right: 13rem;
+}
+@media screen and (max-width: 450px){
+    #backhome a{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #backhome a{
+        position: fixed;
+        bottom: 1rem;
+        right: 5rem;
+    }
+}
+.row.mb-0{
+    margin-bottom: 0;
 }
