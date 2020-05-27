@@ -2,10 +2,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#424242">
   <title>PWA project</title>
-  <link rel="stylesheet" href="./css//materialize.min.css">
+  <link rel="stylesheet" href="./css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./css/index.css">  
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body class="grey darken-1 ">
   <div class="row navbar-fixed">
@@ -105,14 +107,32 @@
     <!-- About Page -->
     <div id="about" class="col s12">
       <div class="container white-text">
-        test 2
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+        <hr class="white">
+        <div class="right-align">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+          <hr class="white">
+        </div>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sin.</p>
+
       </div>
     </div>
 
     <!-- Contact Page -->
     <div id="contact" class="col s12">
       <div class="container white-text">
-        test 3
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem. Sit, suscipit ratione.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saepe ratione tempora beatae a quae laborum repellendus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus non vero, voluptatum voluptate quia saeperatione tempora beatae a quae laborum repellendus, laboriosam id sint exercitationem.</p>
       </div>
     </div>
 
@@ -188,5 +208,17 @@
   <script src="./js/index.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./js/materialize.min.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator){
+      window.addEventListener("load", function(){
+        navigator.serviceWorker.register("./service-worker.js")
+      });
+      console.log("service worker terdaftar")
+    }
+    else{
+      console.log("service tidak di dukung oleh browser ini")
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+{
+    "name": "Submission 1 PWA",
+    "short_name": "Sub 1 PWA",
+    "description": "Submission 1 dari class PWA dicoding",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#424242",
+    "theme_color": "#424242",
+    "icons": [
+        {
+            "src": "/asset/box.svg",
+            "sizes": "512x512",
+            "type": "image/svg"
+        }
+    ]
+}
