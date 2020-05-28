@@ -1,8 +1,10 @@
-const CACHE_NAME = "assetPWA_v5";
+const CACHE_NAME = "assetPWA_v7";
 const isiAsset = [
     "/",
     "/index.html",
     "/asset/box.svg",
+    "/asset/icons-512.png",
+    "/asset/icons-192.png",
     "/asset/dark_theme.jpg",
     "/asset/dark_theme2.jpg",
     "/asset/dark_theme3.jpg",

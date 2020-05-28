@@ -11,9 +11,11 @@ ul.tabs{
 .tabs .subTab a:focus{
     background-color: #084f88 !important;
 }
+ul:not(.browser-default){
+    padding-bottom: 150% !important;
+}
 .subTab a{
     height: 50px !important;  
-    margin-top: 15%;
 } 
 .navbar-fixed{
     z-index: 10 !important;
